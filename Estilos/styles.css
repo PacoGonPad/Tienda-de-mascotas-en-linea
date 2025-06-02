@@ -1,0 +1,13 @@
+@import url(/Estilos/header.css);
+@import url(/Estilos/modal.css);
+@import url(/Estilos/separador.css);
+@import url(/Estilos/main.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'inter', Arial, sans-serif;
+    background-color: #ffa07a;  /*color de fondo*/
+}

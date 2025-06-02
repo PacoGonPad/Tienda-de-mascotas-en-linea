@@ -1,0 +1,7 @@
+.separador{
+    height: px;
+background-color: #ffffff;
+width: 100%;
+margin-top: 70px;/*ajusta la altura del header fijo*/
+box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);/* da un efecto de sombra sutil*/
+}

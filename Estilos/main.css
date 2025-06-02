@@ -1,0 +1,110 @@
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ff6600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px;
+    border-bottom: 3px solid #ff6600;
+    font-family: 'Pacifico', cursive;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+    animation: fadeIn 1s ease-in-out;
+}
+.Productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px 20px;
+    gap: 20px;
+}
+
+.producto {
+    background-color: #f9f9f9;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.producto:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 8px 24px rgba(255,127,80,0.18);
+}
+.producto img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    margin-bottom: 10px;
+    transition: transform 0.2s;
+}
+
+.producto:hover img {
+    transform: scale(1.08);
+}
+.producto h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.producto p {
+    font-size: 0.9em;
+    color: #555;
+    padding: 20px;
+}
+
+.producto span {
+    font-weight: bold;
+    color: #333;
+}
+
+.btn-carrito {
+    background-color: #ff6600;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+     margin-top: 10px;
+}
+.btn-carrito span{
+    color: white;
+}
+
+.btn-carrito:hover {
+    background-color: #e65c00;
+}
+@media (max-width : 768px){
+    .Productos {
+        grid-template-columns: reapeat(2,  1fr);
+
+    }
+}
+@media (max-width: 600px) {
+    .Productos {
+        grid-template-columns: 1fr;
+    }
+    .producto img {
+        max-width: 100px;
+    }
+    .producto h3 {
+        font-size: 1em;
+    }
+    .producto p {
+        font-size: 0.8em;
+    }
+    .btn-carrito {
+        font-size: 0.9em;
+        padding: 6px 10px;
+    }
+    h2 {
+        font-size: 1.5em;
+        padding: 15px;
+    }    
+    }

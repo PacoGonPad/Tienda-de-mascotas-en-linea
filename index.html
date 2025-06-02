@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MisMacostas.com</title>
+    <link rel="stylesheet" href="/Estilos/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1><a href="/index.html">MisMascostas🐕🐈‍⬛</a></h1>
+    <nav class="nav_menu">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Sobre mi pagina</a></li>
+            <li><a href="#">Inicia Sesion</a></li>
+        </ul>
+        <button class="btn-carrito1">
+    <span class="icono-carrito1">🛒</span>
+    <span id="contadorCarrito">0</span>
+        </button>
+    </nav>
+    </header>
+    <div class="separador"></div>
+<!-- Modal del carrito -->
+<div id="modalCarrito" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar" id="cerrarCarrito">&times;</span>
+        <h2>Tu Carrito</h2>
+        <div id="contenidoCarrito"></div>
+        <div id="totalCarrito" style="margin-top:10px; font-weight:bold;"></div>
+        <button id="vaciarCarrito">Vaciar Carrito</button>
+        <button id="pagarCarrito">Proceder al pago</button>
+    </div>
+</div>
+    <main>
+        <div></div>
+        <h2>🐾Productos🐾</h2>
+        <div class="Productos">
+            <div class="producto">
+                <img src="/Imagenes/imagen1.jpg" alt="imagen1">
+                <h3>Alimento para perro</h3>
+                <p>Comida para perro adulto 25kg.</p>
+                <span>$600.00 mx</span>
+                <button class="btn-carrito"><span class="icono-carrito">Agregar al carrito 🛒</span></button>           
+            </div>
+            <div class="producto">
+                <img src="/Imagenes/imagen2.jpg" alt="imagen2">
+                <h3>Arena de gatos</h3>
+                <p>Arena para tu michi de 2kg.</p>
+                <span>$120.00 mx</span>
+                <button class="btn-carrito"><span class="icono-carrito">Agregar al carrito 🛒</span></button>           
+            </div>
+            <div class="producto">
+                <img src="/Imagenes/imagen3.jpg" alt="imagen3">
+                <h3>Portadora de mascota</h3>
+                <p>Tamaño grande para poder llevar a una o más mascotas</p>
+                <span>$1000.00 mx</span>
+                <button class="btn-carrito"><span class="icono-carrito">Agregar al carrito 🛒</span></button>           
+            </div>
+            <div class="producto">
+                <img src="/Imagenes/imagen4.jpg" alt="imagen4">
+                <h3>Despachador de comida para mascota.</h3>
+                <p>Despacha comida en automatico cuando no tenga tu mascota ya no tienes que precouparte por estar rellenadolo diario.</p>
+                <span>$300.00 mx</span>
+                <button class="btn-carrito"><span class="icono-carrito">Agregar al carrito 🛒</span></button>           
+            </div>
+            <div class="producto">
+                <img src="/Imagenes/imagen5.jpg" alt="imagen5">
+                <h3>Shampoo para perro</h3>
+                <p>Para dejar brilloso el pelo al consentido de la casa.</p>
+                <span>$150.00 mx</span>
+                <button class="btn-carrito"><span class="icono-carrito">Agregar al carrito 🛒</span></button>           
+            </div>
+            <div class="producto">
+                <img src="/Imagenes/imagen6.jpg" alt="imagen6">
+                <h3>Juguete para estimulacion de perro</h3>
+                <p>Este jueguete sirve para estimular a tu mascota.</p>
+                <span>$450.00 mx</span>
+                <button class="btn-carrito"><span class="icono-carrito">Agregar al carrito 🛒</span></button>           
+            </div>
+            <div class="producto">
+                <img src="/Imagenes/imagen7.jpg" alt="imagen7">
+                <h3>Rascador para gato</h3>
+                <p>Para que estimular a tu michi</p>
+                <span>$300.00 mx</span>
+                <button class="btn-carrito"><span class="icono-carrito">Agregar al carrito 🛒</span></button>           
+            </div>
+            <div class="producto">
+                <img src="/Imagenes/imagen8.jpg" alt="imagen8">
+                <h3>Suplemento para perro.</h3>
+                <p>Para tener siempre sano a tu canino.</p>
+                <span>$500.00 mx</span>
+                <button class="btn-carrito"><span class="icono-carrito">Agregar al carrito 🛒</span></button>           
+            </div>
+            <div class="producto">
+                <img src="/Imagenes/imagen9.jpg" alt="imagen9">
+                <h3>Collar para mascota</h3>
+                <p>Para que lleves a tu mascota a donde quieras.</p>
+                <span>$300.00 mx</span>
+                <button class="btn-carrito"><span class="icono-carrito">Agregar al carrito 🛒</span></button>           
+            </div>
+            <div class="producto">
+                <img src="/Imagenes/imagen10.jpg" alt="imagen10">
+                <h3>Cama para mascota</h3>
+                <p>Descripción breve</p>
+                <span>$300.00 mx</span>
+                <button class="btn-carrito"><span class="icono-carrito">Agregar al carrito 🛒</span></button>           
+            </div>
+            <div class="producto">
+                <img src="/Imagenes/imagen11.jpg" alt="imagen11">
+                <h3>Pecera</h3>
+                <p>pecera en tamaño mediano</p>
+                <span>$600.00 mx</span>
+                <button class="btn-carrito"><span class="icono-carrito">Agregar al carrito 🛒</span></button>           
+            </div>
+            <div class="producto">
+                <img src="/Imagenes/imagen12.jpg" alt="imagen12">
+                <h3>Juala para aves</h3>
+                <p>Juala en tamaño mediano</p>
+                <span>$300.00 mx</span>
+                <button class="btn-carrito"><span class="icono-carrito">Agregar al carrito 🛒</span></button>           
+            </div>
+            <div class="producto">
+                <img src="/Imagenes/imagen13.jpg" alt="imagen13">
+                <h3>Nombre del producto</h3>
+                <p>Descripción breve</p>
+                <span>$300.00 mx</span>
+                <button class="btn-carrito"><span class="icono-carrito">Agregar al carrito 🛒</span></button>           
+            </div>
+            <div class="producto">
+                <img src="/Imagenes/imagen14.jpg" alt="imagen14">
+                <h3>Botiquin primeros auxilios</h3>
+                <p>Botiquin basico para las mascotas</p>
+                <span>$300.00 mx</span>
+                <button class="btn-carrito"><span class="icono-carrito">Agregar al carrito 🛒</span></button>           
+            </div>
+            <div class="producto">
+                <img src="/Imagenes/imagen15.jpg" alt="imagen15">
+                <h3>Espejo con soporte para aves.</h3>
+                <p>Espejo con soporte de madera.</p>
+                <span>$300.00 mx</span>
+                <button class="btn-carrito"><span class="icono-carrito">Agregar al carrito 🛒</span></button>           
+            </div>
+            <div class="producto">
+                <img src="/Imagenes/imagen16.jpg" alt="imagen16">
+                <h3>Snack para mascota</h3>
+                <p>Premios para mascota para el consentido de la casa.</p>
+                <span>$300.00 mx</span>
+                <button class="btn-carrito"><span class="icono-carrito">Agregar al carrito 🛒</span></button>           
+            </div>
+        </div>
+    </main>
+    <div class="separador"></div>
+    <footer></footer>
+    <script src="/modal.js"></script>
+    <script src="/main.js"></script>
+</body>
