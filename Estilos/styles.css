@@ -1,7 +1,9 @@
 @import url(/Estilos/header.css);
 @import url(/Estilos/modal.css);
+@import url(/Estilos/modal_login.css);
 @import url(/Estilos/separador.css);
 @import url(/Estilos/main.css);
+
 *{
     margin: 0;
     padding: 0;

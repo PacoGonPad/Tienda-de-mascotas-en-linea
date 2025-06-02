@@ -18,7 +18,7 @@
             <li><a href="#">Contacto</a></li>
             <li><a href="#">Productos</a></li>
             <li><a href="#">Sobre mi pagina</a></li>
-            <li><a href="#">Inicia Sesion</a></li>
+            <li><a href="#" id="abrirLogin">Inicia Sesion</a></li>
         </ul>
         <button class="btn-carrito1">
     <span class="icono-carrito1">🛒</span>
@@ -37,6 +37,28 @@
         <button id="vaciarCarrito">Vaciar Carrito</button>
         <button id="pagarCarrito">Proceder al pago</button>
     </div>
+</div>
+<!-- Modal de Login -->
+<div id="modalLogin" class="modal">
+  <div class="modal-contenido login-modal">
+    <span id="cerrarLogin" class="cerrar">&times;</span>
+    <h2>Iniciar Sesión</h2>
+    <form id="formLogin" autocomplete="off">
+      <div class="form-group">
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" placeholder="Usuario" required autocomplete="username">
+      </div>
+      <div class="form-group">
+        <label for="contrasena">Contraseña</label>
+        <input type="password" id="contrasena" placeholder="Contraseña" required autocomplete="current-password">
+      </div>
+      <button type="submit" class="btn-login">Entrar</button>
+    </form>
+    <div id="loginMensaje" class="login-mensaje"></div>
+    <div style="margin-top:14px; text-align:center;">
+      ¿No tienes cuenta? <a href="#" id="abrirRegistro" style="color:#ff6600;">Regístrate</a>
+    </div>
+  </div>
 </div>
     <main>
         <div></div>
@@ -159,5 +181,5 @@
     <div class="separador"></div>
     <footer></footer>
     <script src="/modal.js"></script>
-    <script src="/main.js"></script>
+    <script src="/modal_login.js"></script>
 </body>
