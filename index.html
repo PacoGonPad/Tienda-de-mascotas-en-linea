@@ -60,6 +60,29 @@
     </div>
   </div>
 </div>
+<!-- Modal de Registro -->
+<div id="modalRegistro" class="modal">
+  <div class="modal-contenido login-modal">
+    <span id="cerrarRegistro" class="cerrar">&times;</span>
+    <h2>Registro</h2>
+    <form id="formRegistro" autocomplete="off">
+      <div class="form-group">
+        <label for="nuevoUsuario">Usuario</label>
+        <input type="text" id="nuevoUsuario" placeholder="Usuario" required>
+      </div>
+      <div class="form-group">
+        <label for="nuevoCorreo">Correo</label>
+        <input type="email" id="nuevoCorreo" placeholder="Correo electrónico" required>
+      </div>
+      <div class="form-group">
+        <label for="nuevaContrasena">Contraseña</label>
+        <input type="password" id="nuevaContrasena" placeholder="Contraseña" required>
+      </div>
+      <button type="submit" class="btn-login">Registrarse</button>
+    </form>
+    <div id="registroMensaje" class="login-mensaje"></div>
+  </div>
+</div>
     <main>
         <div></div>
         <h2>🐾Productos🐾</h2>
@@ -182,4 +205,5 @@
     <footer></footer>
     <script src="/modal.js"></script>
     <script src="/modal_login.js"></script>
+    <script src="/modal_registro.js"></script>
 </body>
